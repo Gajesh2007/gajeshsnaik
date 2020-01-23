@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel='manifest' href='/manifest.webmanifest'>
   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "9f3dce67-110a-4a84-906e-3dc42fd44e1e",
+    });
+  });
+</script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120204810-2"></script>
 <script>
@@ -667,7 +674,6 @@
   <script src="contactform/contactform.js"></script>
     <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-  <script type="text/javascript">var subscribersSiteId='3be62397-0e9d-4a83-ada6-8aacbab15926';</script><script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script>
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 </body>
