@@ -1,0 +1,25 @@
+{
+	"dir" : "ltr",
+	"lang" : "en",
+	"name" : "Gajesh Naik",
+	"scope" : "/",
+	"display" : "browser",
+	"start_url" : "https://gajeshsnaik.me/",
+	"short_name" : "Gajesh Naik",
+	"theme_color" : "transparent",
+	"description" : "",
+	"orientation" : "any",
+	"background_color" : "transparent",
+	"related_applications" : "",
+	"prefer_related_applications" : "false",
+	"icons" : [
+		{
+			"src": "https://gajeshsnaik.me/img/logo.jpg",
+			"sizes": "400x400"
+		},
+		{
+			"src": "https://gajeshsnaik.me/img/logo.jpg",
+			"sizes": "400x400"
+		}],
+	"generated" : "true"
+}

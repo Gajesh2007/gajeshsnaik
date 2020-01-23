@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel='manifest' href='/manifest.webmanifest'>
   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -668,6 +669,26 @@
   <script src="js/main.js"></script>
   <script type="text/javascript">var subscribersSiteId='3be62397-0e9d-4a83-ada6-8aacbab15926';</script><script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script>
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+<script type="text/javascript">
+  // This is the "Offline page" service worker
 
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+</script>
 </body>
 </html>
