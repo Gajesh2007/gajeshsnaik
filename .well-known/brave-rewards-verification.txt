@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: gajeshsnaik.tech
-Token: 2ae71d98cc1bc6abc5b1f002b8aeae65b0d5af06676da533a39978e81b8eccb4
+Token: f74ca3c16b79323aa24cea062e36714150dd25984c7e91196de9aacac367cf71
